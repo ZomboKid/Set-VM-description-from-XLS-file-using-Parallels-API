@@ -1,0 +1,1 @@
+# Set-VM-description-from-XLS-file-using-Parallels-API
