@@ -41,7 +41,6 @@ def parse_xls(XLS_FILE,VM_NAME_SHEET,VM_NAME_COLUMN,VM_DESCRIPTION_SHEET,VM_DESC
     vm_sheet = book.sheet_by_index(VM_NAME_SHEET)#Switching to sheet
     for rownum in range(vm_sheet.nrows)[1:]:#[1:] - is skipping first title row
         row = vm_sheet.row_values(rownum)
-#        print row[1]
         tbl.append(row[VM_NAME_COLUMN])
     for j in range(len(tbl)):
         vm_description_sheet=book.sheet_by_index(VM_DESCRIPTION_SHEET)
